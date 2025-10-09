@@ -9,6 +9,12 @@ vim.opt.splitright = true
 -- Don't wrap lines so the cursor doesn't skip text when scrolling
 vim.opt.wrap = false
 
+-- Enable mouse mode (in case you want to resize a window!)
+vim.opt.mouse = "a"
+
+-- Don't show the mode, since it's already in the status line
+vim.opt.showmode = false
+
 -- Set TAB behaviour
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
