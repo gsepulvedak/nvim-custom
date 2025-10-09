@@ -42,6 +42,7 @@ return {
   dependencies = {
     "nvim-lua/plenary.nvim",
     "MunifTanjim/nui.nvim",
+    "nvim-treesitter/nvim-treesitter",
     {
       -- support for image pasting
       "HakonHarnes/img-clip.nvim",

@@ -4,7 +4,12 @@ return {
     -- optional: provides snippets for the snippet source
     dependencies = {
       "rafamadriz/friendly-snippets",
-      "nvim-tree/nvim-web-devicons"
+      "nvim-tree/nvim-web-devicons",
+      "saghen/blink.compat",
+        opts = {
+          impersonate_nvim_cmp = true, -- make blink behave like nvim-cmp
+          enable_events = true,        -- forward cmp events
+        },
     },
 
     -- use a release tag to download pre-built binaries
