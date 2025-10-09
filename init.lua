@@ -7,5 +7,8 @@ vim.g.maplocalleader = " "
 -- Load nvim options
 require("options")
 
+-- Load lsp servers. To add more servers, edit ./lua/lsp.lua
+require("lsp")
+
 -- Install or load lazy.lua
 require("config.lazy")
