@@ -17,8 +17,8 @@ vim.opt.showmode = false
 
 -- Set TAB behaviour
 vim.opt.expandtab = true
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
 
 -- Make the clipboard reachable for "everybody"
 vim.opt.clipboard = "unnamedplus"
