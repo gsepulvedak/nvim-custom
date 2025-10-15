@@ -3,5 +3,17 @@ vim.lsp.enable({
   "air",
   "lua_ls",
   "r_language_server",
+
+  -- Enable folding capacity for ufo plugin
+  opts = {
+    capabilities = {
+      textDocument = {
+        foldingRange = {
+          dynamicRegistration = false,
+          lineFoldingOnly = true,
+        },
+      },
+    },
+  },
 })
 -- This will trigger vim.lsp.config("*") for configs in lsp/*.lua
