@@ -73,6 +73,9 @@ return {
               ["po"] = { query = "@parameter.outer", desc = "Select [p]arameters" },
               ["pi"] = { query = "@parameter.inner", desc = "Select [p]arameters" },
               ["ac"] = { query = "@comment.block", desc = "Select [a]round [c]omments" },
+              ["se"] = { query = "@select_expression", desc = "Select [e]xpression" },
+              ["re"] = { query = "@sql_relation", desc = "Select sql [re]lation" },
+              ["be"] = { query = "@sql_binary_expression", desc = "Select sql [b]inary [e]xpression" },
             },
           },
           swap = {
