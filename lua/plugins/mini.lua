@@ -27,7 +27,7 @@ return {
       end
       vim.keymap.set('n', '<leader>F', minifiles_toggle, { desc = "Toggle mini.files buffer" })
 
-      -- require("mini.pairs").setup()
+      require("mini.ai").setup()
     end,
   },
 }
