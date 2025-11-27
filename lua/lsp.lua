@@ -3,6 +3,7 @@ vim.lsp.enable({
   "air",
   "lua_ls",
   "r_language_server",
+  "pylsp",
 
   -- Enable folding capacity for ufo plugin
   opts = {
