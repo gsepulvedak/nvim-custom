@@ -8,3 +8,9 @@
 ; --- Fallback: single comment line as a block too ---
 ((comment) @c.only
   (#make-range! "comment.block" @c.only @c.only))
+
+; --- Capture lhs of "<-" operator
+(binary_operator
+  lhs: (identifier) @assignment.lhs
+  operator: "<-")
+

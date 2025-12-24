@@ -8,3 +8,6 @@
 
 ; --- select complete where clause predicate ---
 (binary_expression) @sql_binary_expression
+
+; --- select complete query ---
+(statement) @query

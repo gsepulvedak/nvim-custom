@@ -76,10 +76,17 @@ return {
               ["se"] = { query = "@select_expression", desc = "Select [e]xpression" },
               ["re"] = { query = "@sql_relation", desc = "Select sql [re]lation" },
               ["be"] = { query = "@sql_binary_expression", desc = "Select sql [b]inary [e]xpression" },
+              ["q"] = { query = "@query", desc = "Select sql [q]uery" },
             },
           },
           swap = {
-            enable = false,
+            enable = true,
+            swap_next = {
+              ["<leader>ap"] = "@parameter.inner",
+            },
+            swap_previous = {
+              ["<leader>Ap"] = "@parameter.inner",
+            },
           },
           move = {
             enable = true,
@@ -90,7 +97,7 @@ return {
               ["]c"] = { query = "@comment.block", desc = "Next class start" },
               ["]i"] = { query = "@conditional.outer", desc = "Next conditional start" },
               ["]l"] = { query = "@loop.outer", desc = "Next loop start" },
-              ["]]"] = { query = "@assignment.outer", desc = "Next code chunk" },
+              ["]]"] = { query = "@assignment.lhs", desc = "Next code chunk" },
             },
             goto_next_end = {
               ["]F"] = { query = "@call.outer", desc = "Next function call end" },
@@ -105,7 +112,7 @@ return {
               ["[c"] = { query = "@comment.block", desc = "Prev class start" },
               ["[i"] = { query = "@conditional.outer", desc = "Prev conditional start" },
               ["[l"] = { query = "@loop.outer", desc = "Prev loop start" },
-              ["[["] = { query = "@assignment.outer", desc = "Prev code chunk" },
+              ["[["] = { query = "@assignment.lhs", desc = "Prev code chunk" },
             },
             goto_previous_end = {
               ["[F"] = { query = "@call.outer", desc = "Prev function call end" },
