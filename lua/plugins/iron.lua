@@ -26,6 +26,13 @@ return {
           -- How the repl window will be displayed
           -- See below for more information
           repl_open_cmd = require('iron.view').split.vertical.botright("40%"),
+          -- repl_open_cmd = require('iron.view').offset {
+          --   width = 80,             -- Fixed width in columns
+          --   height = 30,            -- Fixed height in rows
+          --   -- Pin to the right (1) and bottom (1)
+          --   w_offset = require('iron.view').helpers.proportion(1),
+          --   h_offset = require('iron.view').helpers.proportion(1),
+          -- },
         },
         -- iron doesn't set keymaps by default anymore.
         -- You can set them here or manually add keymaps to the functions in iron.core

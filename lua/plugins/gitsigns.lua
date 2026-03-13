@@ -32,7 +32,7 @@ return {
       map('n', '<leader>hp', gs.preview_hunk, {desc='Preview hunk'})
       map('n', '<leader>hi', gs.preview_hunk_inline, {desc = 'Preview hunk inline'})
       map('n', '<leader>hb', function() gs.blame_line{full=true} end, {desc='Blame line'})
-      map('n', '<leader>tb', gs.toggle_current_line_blame, {desc='Toggle line blame'})
+      map('n', '<leader>bb', gs.toggle_current_line_blame, {desc='Toggle line blame'})
       map('n', '<leader>hd', gs.diffthis, {desc='Diff this'})
       map('n', '<leader>hD', function() gs.diffthis('~') end, {desc='Diff against HEAD'})
       map('n', '<leader>td', gs.toggle_deleted, {desc='Toggle deleted'})
