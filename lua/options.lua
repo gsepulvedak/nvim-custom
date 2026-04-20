@@ -62,3 +62,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
+
+-- Set default expr as fold method for R scripts foldng mainly
+vim.opt_local.foldmethod = "expr"
+vim.opt_local.foldexpr = "v:lua.RCommentFold(v:lnum)"

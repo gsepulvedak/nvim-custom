@@ -18,3 +18,6 @@ require("config.lazy")
 
 -- Configure database connections for dadbod-ui
 require("db-connections")
+
+-- Configure custom R-folds according to expression
+require("r_folds")

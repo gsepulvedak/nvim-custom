@@ -129,4 +129,14 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+-- R: add keymap for custom Telescope picker (script outline based of custom folding sections)
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "r", "rmd", "quarto" },
+  callback = function(args)
+    vim.keymap.set("n", "<leader>ro", function()
+      require("r_sections_picker").pick_sections()
+    end, { buffer = args.buf, desc = "R section picker" })
+  end,
+})
+
 -- vim: ts=2 sts=2 sw=2 et
