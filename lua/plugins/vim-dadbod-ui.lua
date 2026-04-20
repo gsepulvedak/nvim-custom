@@ -17,9 +17,12 @@ return {
     local function set_save_location()
       local cwd = vim.fn.getcwd()
       local rproj_files = vim.fn.globpath(cwd, "*.R", false, true)
+      local sql_files = vim.fn.globpath(cwd, "*.sql", false, true)
 
       if #rproj_files > 0 then
         vim.g.db_ui_save_location = "./sql"
+      elseif #sql_files > 0 then
+        vim.g.db_ui_save_location = "."
       else
         vim.g.db_ui_save_location = "~/.local/share/db_ui"
       end
