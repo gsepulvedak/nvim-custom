@@ -55,6 +55,9 @@ end
 
 vim.keymap.set({ 'n', 't' }, "<leader>m", toggle_theme, {})
 
+-- make sure "gd" actually goes to a function definition
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+
 -- remap to insert pipe operator when working with R files
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "r",

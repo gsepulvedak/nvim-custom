@@ -26,7 +26,7 @@ return {
           },
       },
       openai = {
-        model = "gpt-4.1"
+        model = "gpt-4.1",
       },
       moonshot = {
         endpoint = "https://api.moonshot.ai/v1",
