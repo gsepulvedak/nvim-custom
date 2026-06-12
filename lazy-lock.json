@@ -1,5 +1,5 @@
 {
-  "avante.nvim": { "branch": "main", "commit": "044f2ec3b23ecba3cbdd694ae15f05b4e06c429b" },
+  "avante.nvim": { "branch": "main", "commit": "e7a167e5bf7de92d406e371d500c803603ec642f" },
   "blink.cmp": { "branch": "main", "commit": "78336bc89ee5365633bcf754d93df01678b5c08f" },
   "blink.compat": { "branch": "main", "commit": "1454f14a8d855a578ceeba77c62538fa1459a67c" },
   "conform.nvim": { "branch": "master", "commit": "619363c30309d29ffa631e67c8183f2a72caa373" },
@@ -9,7 +9,7 @@
   "img-clip.nvim": { "branch": "main", "commit": "b6ddfb97b5600d99afe3452d707444afda658aca" },
   "iron.nvim": { "branch": "master", "commit": "88cd340407b959f1168af2a6ae5a3d180e6df32c" },
   "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
-  "mini.nvim": { "branch": "main", "commit": "ff8b3580935818ef2f21bdd651f057a2ae071eab" },
+  "mini.nvim": { "branch": "main", "commit": "a59a9b7fb0a42cbcf022938ee5f0724320b66f63" },
   "neogit": { "branch": "master", "commit": "99326a1310fb2d616b455d2fd16d01bf00682f06" },
   "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },
   "nvim-autopairs": { "branch": "master", "commit": "7b9923abad60b903ece7c52940e1321d39eccc79" },
