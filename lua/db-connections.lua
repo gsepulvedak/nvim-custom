@@ -19,8 +19,8 @@ vim.g.dbs = {
     url = postgres_service_url("snifa_dev"),
   },
   {
-    name = "SNIFA-PERT",
-    url = postgres_service_url("snifa_pert"),
+    name = "SEIA-PERT",
+    url = postgres_service_url("seia_pert"),
   },
   {
     name = "reclamaciones_dev",
