@@ -30,4 +30,8 @@ vim.g.dbs = {
     name = "reclamaciones_prod",
     url = postgres_service_url("reclamaciones_prod"),
   },
+  {
+    name = "seia_dev_backup",
+    url = postgres_service_url("seia_dev_backup"),
+  },
 }
